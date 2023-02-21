@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var TienTra, LaiThang, TienGui, LaiSuat,ThoiGian;
+    //  document.write("nếu ko dùng dong 18 thì sẽ cho thêm hàm parseInt vào trc hàm gửi để"+
+    // "chuyển dãy tiền gửi thành số nguyên ")
+    TienGui=prompt("số tiền gửi: ")*1;
+    LaiSuat=prompt("lãi suất hàng tháng(chỉ cần viết sô không cần ghi %): ");
+    ThoiGian=prompt("Bạn muốn gửi trong mấy năm ? ");
+    LaiThang=(TienGui*1*LaiSuat)/100 ;
+    TienTra=TienGui+LaiThang*ThoiGian;
+    document.writeln("số tiền bạn nhận được sau  "+ThoiGian+" năm: ");
+    document.writeln(TienTra);
+</script>
